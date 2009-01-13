@@ -1,1 +1,19 @@
 #!/usr/bin/env ruby
+$:.unshift File.join(File.dirname(__FILE__), '..', 'lib')
+
+require 'rubygems'
+require 'merb-core'
+require 'templater'
+require 'merb_slice-gen'
+
+def Gem.latest_gem_paths
+  [File.join(File.dirname(__FILE__), '..')]
+end
+
+Templater::Discovery::discover!("slice-gen")
+
+Merb.generators.each do |file|
+  require file
+end
+
+Merb::Generators::run_cli(Dir.pwd, 'slice-gen', Merb::VERSION, ARGV)

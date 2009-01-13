@@ -24,10 +24,11 @@ spec = Gem::Specification.new do |s|
   s.email = EMAIL
   s.homepage = HOMEPAGE
   s.executables = %w(slice-gen)
-  s.add_dependency('merb', '>= 1.0.7.1')
+  s.add_dependency('merb-gen', '>= 1.0.7.1')
   s.bindir = 'bin'
   s.require_path = 'lib'
-  s.files = %w(LICENSE README Rakefile TODO) + Dir.glob("{lib,spec}/**/*")
+  s.files = %w(LICENSE README Rakefile TODO Generators) +
+    Dir.glob("{lib,spec}/**/*")
 end
 
 Rake::GemPackageTask.new(spec) do |pkg|

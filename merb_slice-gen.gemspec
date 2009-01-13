@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.email = %q{genki@s21g.com}
   s.executables = ["slice-gen"]
   s.extra_rdoc_files = ["README", "LICENSE", "TODO"]
-  s.files = ["LICENSE", "README", "Rakefile", "TODO", "lib/merb_slice-gen", "lib/merb_slice-gen/merbtasks.rb", "lib/merb_slice-gen.rb", "spec/merb_slice-gen_spec.rb", "spec/spec_helper.rb", "bin/slice-gen"]
+  s.files = ["LICENSE", "README", "Rakefile", "TODO", "Generators", "lib/generators", "lib/generators/slice_controller_generator.rb", "lib/merb_slice-gen", "lib/merb_slice-gen/merbtasks.rb", "lib/merb_slice-gen.rb", "spec/merb_slice-gen_spec.rb", "spec/spec_helper.rb", "bin/slice-gen"]
   s.has_rdoc = true
   s.homepage = %q{http://blog.s21g.com/genki}
   s.require_paths = ["lib"]
@@ -25,11 +25,11 @@ Gem::Specification.new do |s|
     s.specification_version = 2
 
     if Gem::Version.new(Gem::RubyGemsVersion) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<merb>, [">= 1.0.7.1"])
+      s.add_runtime_dependency(%q<merb-gen>, [">= 1.0.7.1"])
     else
-      s.add_dependency(%q<merb>, [">= 1.0.7.1"])
+      s.add_dependency(%q<merb-gen>, [">= 1.0.7.1"])
     end
   else
-    s.add_dependency(%q<merb>, [">= 1.0.7.1"])
+    s.add_dependency(%q<merb-gen>, [">= 1.0.7.1"])
   end
 end
