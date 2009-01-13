@@ -1,5 +1,5 @@
 scope 'slice-gen' do
   dir = File.join(File.dirname(__FILE__), 'lib', 'generators/')
-  Merb.add_generators dir + 'slice_controller_generator'
+  Merb.add_generators dir + 'namespaced_generator_ext'
 end
 
