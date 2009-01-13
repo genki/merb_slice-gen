@@ -43,7 +43,7 @@ module Merb::Generators
     end
   
     def modules
-      super.unshift('foo')
+      super.unshift($slice_name.gsub('-', '_').camel_case)
     end
   end
 

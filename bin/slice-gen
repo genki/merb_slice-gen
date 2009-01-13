@@ -1,14 +1,13 @@
 #!/usr/bin/env ruby
-$:.unshift File.join(File.dirname(__FILE__), '..', 'lib')
+
+__DIR__ = Dir.pwd
 
 require 'rubygems'
 require 'merb-core'
 require 'templater'
 require 'merb_slice-gen'
 
-def Gem.latest_gem_paths
-  [File.join(File.dirname(__FILE__), '..')]
-end
+$slice_name = File.basename(__DIR__)
 
 Templater::Discovery::discover!("slice-gen")
 
