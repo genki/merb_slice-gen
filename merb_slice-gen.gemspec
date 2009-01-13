@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.email = %q{genki@s21g.com}
   s.executables = ["slice-gen"]
   s.extra_rdoc_files = ["README", "LICENSE", "TODO"]
-  s.files = ["LICENSE", "README", "Rakefile", "TODO", "Generators", "lib/generators", "lib/generators/slice_controller_generator.rb", "lib/merb_slice-gen", "lib/merb_slice-gen/merbtasks.rb", "lib/merb_slice-gen.rb", "spec/merb_slice-gen_spec.rb", "spec/spec_helper.rb", "bin/slice-gen"]
+  s.files = ["LICENSE", "README", "Rakefile", "TODO", "Generators", "lib/generators", "lib/generators/slice_controller_generator.rb", "lib/merb_slice-gen", "lib/merb_slice-gen/merbtasks.rb", "lib/merb_slice-gen.rb", "spec/merb_slice-gen_spec.rb", "spec/requests", "spec/spec_helper.rb", "bin/slice-gen"]
   s.has_rdoc = true
   s.homepage = %q{http://blog.s21g.com/genki}
   s.require_paths = ["lib"]
